@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html language="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <title>Interactive Photo Gallery</title>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/lightbox.min.css">
+        
+        <link rel="stylesheet" href="css/styles.css">
+     
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+        
+</head>
+<body>
+    <main>
+
+<header>
+    <div class = "wrapper">  
+        <div class="searchbox">
+            <input type="search" class="input" id="search" name="search" placeholder="Search photos">
+            <div class="searchbtn">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>  
+
+    </div>
+
+    
+</header> 
+
+<div class="gallery">
+  
+    <a href="images/photos/01.jpg" data-lightbox="gallery" data-title="I love hay bales.  Took this snapshot on a drive through the countryside past some straw fields." data-alt="Hay bales">
+         <img src="images/photos/thumbnails/01.jpg" alt="Hay bales"></a>
+    
+
+    <a href="images/photos/02.jpg" data-lightbox="gallery" data-title="The lake was so calm today.  We had a great view of the snow-capped mountains from here." data-alt="lake">
+        <img src="images/photos/thumbnails/02.jpg" alt="Lake"></a>
+
+    <a href="images/photos/03.jpg" data-lightbox="gallery" data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below." data-alt="Canyon">
+        <img src="images/photos/thumbnails/03.jpg" alt="Canyon"></a>
+
+    <a href="images/photos/04.jpg" data-lightbox="gallery" data-title="It was amazing to see an iceberg up close; it was so cold but didn't snow today." data-alt="Iceberg">
+        <img src="images/photos/thumbnails/04.jpg" alt="Iceberg"></a>
+
+    <a href="images/photos/05.jpg" data-lightbox="gallery" data-title="The red cliffs were beautiful.  It was really hot in the desert but we did a lot of walking through the canyons." data-alt="Desert">
+        <img src="images/photos/thumbnails/05.jpg" alt="Desert"></a>
+
+    <a href="images/photos/06.jpg" data-lightbox="gallery" data-title="Fall is coming, I love when the leaves on the trees start to change color." data-alt="Fall">
+        <img src="images/photos/thumbnails/06.jpg" alt="Fall"></a>
+
+    <a href="images/photos/07.jpg" data-lightbox="gallery" data-title="I drove past this plantation yesterday, everything is so green!" data-alt="Plantation">
+        <img src="images/photos/thumbnails/07.jpg" alt="Plantation"></a>
+
+    <a href="images/photos/08.jpg" data-lightbox="gallery" data-title="My summer vacation to the Oregon Coast.  I love the sand dunes!" data-alt="Dunes">
+        <img src="images/photos/thumbnails/08.jpg" alt="Dunes"></a>
+
+    <a href="images/photos/09.jpg" data-lightbox="gallery" data-title="We enjoyed a quiet stroll down this countryside lane." data-alt="Countryside Lane"> 
+        <img src="images/photos/thumbnails/09.jpg" alt="Countryside Lane"></a>
+
+    <a href="images/photos/10.jpg" data-lightbox="gallery" data-title="Sunset at the coast!  The sky turned a lovely shade of orange." data-alt="Sunset">
+        <img src="images/photos/thumbnails/10.jpg" alt="Sunset"></a>
+
+    <a href="images/photos/11.jpg" data-lightbox="gallery" data-title="I did a tour of a cave today and the view of the landscape below was breathtaking." data-alt="Cave">
+        <img src="images/photos/thumbnails/11.jpg" alt="Cave"></a>
+
+    <a href="images/photos/12.jpg" data-lightbox="gallery" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog rolled in." data-alt="Bluebells">
+        <img src="images/photos/thumbnails/12.jpg" alt="Bluebells"></a>
+
+    </div>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/lightbox2/lightbox.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/lightbox2/script.js"></script>
+
+<!--expanding search button program-->
+    <script>
+        $(document).ready(function() {
+        $(".searchbtn").click(function() {
+            $(this).toggleClass("bg-blue");
+            $(".fas").toggleClass("color-white");
+            $(".input").focus().toggleClass("active-width").val('');
+        });
+    });
+</script>
+       
+</body>
+</html>
+  
